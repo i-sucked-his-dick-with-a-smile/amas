@@ -1,6 +1,6 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
-MATT = false
+SAM = false
 RunService.RenderStepped:Connect(function()
     game.workspace.FallenPartsDestroyHeight = 0/0
     game:GetService("Players").LocalPlayer.ReplicationFocus = game.Players.LocalPlayer.Character
@@ -625,10 +625,10 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,-1.5,-5.5)*CFrame.Angles(math.ra
   end
 end 
 
-MATT = false
+
 mouse.KeyDown:connect(function(key)
     if key == "t" then
-  if ATTACK == false and MATT == true then
+  if ATTACK == false and SAM == true then
 
 
 wave()
@@ -638,7 +638,7 @@ end)
 
 mouse.KeyDown:connect(function(key)
     if key == "e" then
-  if ATTACK == false and MATT == true then
+  if ATTACK == false and SAM == true then
 
 
 fist()
@@ -650,7 +650,7 @@ end)
 
 mouse.KeyDown:connect(function(key)
     if key == "r" then
-  if ATTACK == false and MATT == true then
+  if ATTACK == false and SAM == true then
   
 
 thumbsUp()
@@ -661,10 +661,10 @@ thumbsUp()
 end)
 mouse.KeyDown:connect(function(key)
     if key == "q" then
-  if MATT == false then
-  MATT = true
-  elseif MATT == true then
-   MATT = false
+  if SAM == false then
+  SAM = true
+  elseif SAM == true then
+   SAM = false
 
   end
   end
@@ -674,7 +674,7 @@ while Humanoid.Health > 0 do
     swait()
     local TORSOVELOCITY = (RootPart.Velocity * VT(1, 0, 1)).magnitude
     local TORSOVERTICALVELOCITY = RootPart.Velocity.y
-    if TORSOVELOCITY > 1 and ATTACK == false and MATT == false then -- walk anim
+    if TORSOVELOCITY > 1 and ATTACK == false and SAM == false then -- walk anim
    finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
    thumb.C0=thumb.C0:Lerp(THUMB*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
     thumb2.C0=thumb2.C0:Lerp(THUMB2*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
@@ -688,7 +688,7 @@ while Humanoid.Health > 0 do
   LeftHip.C0=LeftHip.C0:Lerp(LeftHipOrigin*CFrame.new(0,0.01,0)*CFrame.Angles(math.rad(0) - LeftLeg.RotVelocity.Y / 70,math.rad(5),math.cos(tick()*3)/2),0.1)
 RootJoint.C0=RootJoint.C0:Lerp(RootJointOrigin*CFrame.new(0,0,0)*CFrame.Angles(math.rad(8), math.cos(tick()*2)/40 - RootPart.RotVelocity.Y / 70 ,0),0.1)
 -- -gh 29532720
-   elseif TORSOVELOCITY < 1 and ATTACK == false and MATT == false then -- no walk
+   elseif TORSOVELOCITY < 1 and ATTACK == false and SAM == false then -- no walk
 finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
    thumb.C0=thumb.C0:Lerp(THUMB*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
     thumb2.C0=thumb2.C0:Lerp(THUMB2*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , math.rad(0),math.rad(0)),0.1)
@@ -701,7 +701,7 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , 
   LeftHip.C0=LeftHip.C0:Lerp(LeftHipOrigin*CFrame.new(-0,0.01,0)*CFrame.Angles(0,math.rad(-0),math.rad(-10)),0.1)
   RootJoint.C0=RootJoint.C0:Lerp(RootJointOrigin*CFrame.new(0,0,0)*CFrame.Angles(math.rad(8),0,0),0.1)
     end
-  if TORSOVELOCITY > 1 and ATTACK == false and MATT == true then -- walk anim
+  if TORSOVELOCITY > 1 and ATTACK == false and SAM == true then -- walk anim
    finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,4,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
    thumb.C0=thumb.C0:Lerp(THUMB*CFrame.new(-0.7,4,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
     thumb2.C0=thumb2.C0:Lerp(THUMB2*CFrame.new(-1.5,2,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
@@ -715,7 +715,7 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0,0,0)*CFrame.Angles(math.rad(90) , 
   LeftHip.C0=LeftHip.C0:Lerp(LeftHipOrigin*CFrame.new(0,0.01,0)*CFrame.Angles(math.rad(0) - LeftLeg.RotVelocity.Y / 70,math.rad(5),math.cos(tick()*3)/2),0.1)
 RootJoint.C0=RootJoint.C0:Lerp(RootJointOrigin*CFrame.new(0,0,0)*CFrame.Angles(math.rad(8), math.cos(tick()*2)/40 - RootPart.RotVelocity.Y / 70 ,0),0.1)
 -- -gh 29532720
-   elseif TORSOVELOCITY < 1 and ATTACK == false and MATT == true then -- no walk
+   elseif TORSOVELOCITY < 1 and ATTACK == false and SAM == true then -- no walk
     finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,4,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
    thumb.C0=thumb.C0:Lerp(THUMB*CFrame.new(-0.7,4,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
     thumb2.C0=thumb2.C0:Lerp(THUMB2*CFrame.new(-1.5,2,1)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(0),math.rad(0)),0.1)
