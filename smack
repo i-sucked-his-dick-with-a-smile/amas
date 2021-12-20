@@ -590,6 +590,7 @@ swait()
 
   end
 end 
+MATT = false
 mouse.KeyDown:connect(function(key)
     if key == "e" then
      if ATTACK == false and MATT == true then
@@ -606,7 +607,7 @@ end
   
   end
 end)
-MATT = false
+
 mouse.KeyDown:connect(function(key)
     if key == "r"  then
   if ATTACK == false and MATT == true then
