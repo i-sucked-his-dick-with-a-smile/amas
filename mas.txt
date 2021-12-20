@@ -573,26 +573,9 @@ function swait()
     game:GetService('RunService').Heartbeat:wait()
 end
 
-function vent()
-swait()
-  for i = 0, 15, 1 do
-    swait()
-   thumb.C0=thumb.C0:Lerp(THUMB*CFrame.new(-0.7,-1,-7)*CFrame.Angles(math.rad(-160), math.rad(0),math.rad(0)),0.1)
-
-
-  end
-end 
-
-function vent1()
-swait()
-  for i = 0, 15, 1 do
-    swait()
-    thumb2.C0=thumb2.C0:Lerp(THUMB2*CFrame.new(-1.5,2,-0.2)*CFrame.Angles(math.rad(0) + math.cos(tick()*2.5)/55, math.rad(-90),math.rad(0)),0.1)
 
 
 
-  end
-end 
 
 function slap()
 swait()
@@ -607,15 +590,7 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,-1.5,-5.5)*CFrame.Angles(math.ra
   end
 end 
 
-function vent2()
-swait()
-  for i = 0, 15, 1 do
-    swait()
-   finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,-1,-7)*CFrame.Angles(math.rad(-160), math.rad(0),math.rad(0)),0.1)
 
-
-  end
-end 
 function wave()
 swait()
   for i = 0, 15, 1 do
@@ -650,16 +625,6 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,-1.5,-5.5)*CFrame.Angles(math.ra
   end
 end 
 
-MATT = false
-mouse.KeyDown:connect(function(key)
-    if key == "h" then
-  if ATTACK == false and MATT == true then
-
-
-vent()
-  end
-  end
-end)
 
 mouse.KeyDown:connect(function(key)
     if key == "t" then
@@ -670,24 +635,7 @@ wave()
   end
   end
 end)
-mouse.KeyDown:connect(function(key)
-    if key == "f" then
-  if ATTACK == false and MATT == true then
 
-
-vent1()
-  end
-  end
-end)
-mouse.KeyDown:connect(function(key)
-    if key == "g" then
-  if ATTACK == false and MATT == true then
-
-
-vent2()
-  end
-  end
-end)
 mouse.KeyDown:connect(function(key)
     if key == "e" then
   if ATTACK == false and MATT == true then
