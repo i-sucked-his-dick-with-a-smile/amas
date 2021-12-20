@@ -1,6 +1,6 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
-
+MATT = false
 RunService.RenderStepped:Connect(function()
     game.workspace.FallenPartsDestroyHeight = 0/0
     game:GetService("Players").LocalPlayer.ReplicationFocus = game.Players.LocalPlayer.Character
