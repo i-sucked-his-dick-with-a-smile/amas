@@ -625,7 +625,7 @@ finger1.C0=finger1.C0:Lerp(FINGA*CFrame.new(0.5,-1.5,-5.5)*CFrame.Angles(math.ra
   end
 end 
 
-
+MATT = false
 mouse.KeyDown:connect(function(key)
     if key == "t" then
   if ATTACK == false and MATT == true then
