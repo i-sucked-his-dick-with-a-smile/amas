@@ -497,10 +497,10 @@ addy.C1 = CFrame.new(0,-0.15,0)*CFrame.Angles(math.rad(0),math.rad(90),0)
 punch = false
 game.Players.LocalPlayer.Character["LongStraightHair"].Handle.Touched:Connect(function(Object)
     if Object.Parent:FindFirstChild("Humanoid") then
-        if punch == true then
+
 
                             v.CFrame = Object.Parent:FindFirstChild("HumanoidRootPart").CFrame
-         end 
+         
        end
 end)
 
